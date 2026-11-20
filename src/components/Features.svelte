@@ -30,6 +30,7 @@
           <h3>Lightweight by design</h3>
           <p>
             Made with light solutions and performance in mind.
+            It's only 600 KB (&lt;1MB)
           </p>
         </div>
       </article>
