@@ -115,7 +115,6 @@
 
   .line {
     display: block;
-    overflow: hidden;
     padding-bottom: 0.06em;
     margin-bottom: -0.06em;
   }
