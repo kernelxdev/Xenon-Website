@@ -1,6 +1,10 @@
+<script>
+  import { reveal } from "../lib/reveal.js";
+</script>
+
 <footer class="footer">
   <div class="shell">
-    <div class="footer-top">
+    <div class="footer-top" use:reveal={{ threshold: 0.1 }}>
       <div class="footer-brand">
         <a class="brand" href="/" aria-label="Xenon home">
           <img src="/logo.png" alt="" width="30" height="30" />

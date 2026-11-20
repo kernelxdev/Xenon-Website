@@ -238,7 +238,6 @@
     );
     background: var(--header-bg);
     backdrop-filter: blur(20px) saturate(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(140%);
   }
 
   .appbar-inner {
@@ -376,7 +375,6 @@
     opacity: 0;
     visibility: hidden;
     backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
     transition: opacity 160ms var(--ease-in),
       transform 160ms var(--ease-in), visibility 0s linear 160ms;
   }

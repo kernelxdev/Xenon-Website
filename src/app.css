@@ -413,6 +413,33 @@ h3 {
   --icon: url("/icons/wrench.svg");
 }
 
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  filter: blur(5px);
+  transition:
+    opacity 700ms var(--ease-out) var(--reveal-delay, 0ms),
+    transform 700ms var(--ease-out) var(--reveal-delay, 0ms),
+    filter 700ms var(--ease-out) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+
 /* ---------- Skip link ---------- */
 
 .skip-link {

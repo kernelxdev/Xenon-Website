@@ -1,4 +1,6 @@
 <script>
+  import { reveal } from "../lib/reveal.js";
+
   const keys = [
     { key: "F", label: "open the menu" },
   ];
@@ -6,7 +8,7 @@
 
 <section id="get-started" class="section" aria-labelledby="cta-title">
   <div class="shell">
-    <div class="cta-card">
+    <div class="cta-card" use:reveal>
       <div class="cta-copy">
         <p class="eyebrow">Get started</p>
         <h2 id="cta-title">Convinced?</h2>

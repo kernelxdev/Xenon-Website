@@ -1,6 +1,10 @@
+<script>
+  import { reveal } from "../lib/reveal.js";
+</script>
+
 <section id="features" class="section" aria-labelledby="features-title">
   <div class="shell">
-    <div class="section-head">
+    <div class="section-head" use:reveal>
       <p class="eyebrow">Features</p>
       <h2 id="features-title">Everything you need to bot a level.</h2>
       <p class="lede">
@@ -10,7 +14,7 @@
 
     <div class="bento">
 
-      <article class="feature">
+      <article class="feature" use:reveal={{ delay: 80 }}>
         <div class="feature-copy">
           <span class="icon-well"><span class="icon icon-frame icon-21" aria-hidden="true"></span></span>
           <h3>CBF support</h3>
@@ -20,7 +24,7 @@
         </div>
       </article>
 
-      <article class="feature">
+      <article class="feature" use:reveal={{ delay: 160 }}>
         <div class="feature-copy">
           <span class="icon-well"><span class="icon icon-bolt icon-21" aria-hidden="true"></span></span>
           <h3>Lightweight by design</h3>
@@ -30,7 +34,7 @@
         </div>
       </article>
 
-      <article class="feature">
+      <article class="feature" use:reveal={{ delay: 240 }}>
         <div class="feature-copy">
           <span class="icon-well"><span class="icon icon-edit icon-21" aria-hidden="true"></span></span>
           <h3>Macro editor</h3>
@@ -40,7 +44,7 @@
         </div>
       </article>
 
-      <article class="feature">
+      <article class="feature" use:reveal={{ delay: 320 }}>
         <div class="feature-copy">
           <span class="icon-well"><span class="icon icon-calculator icon-21" aria-hidden="true"></span></span>
           <h3>Frame windows, calculated</h3>

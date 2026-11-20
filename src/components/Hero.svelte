@@ -114,14 +114,16 @@
   }
 
   .line {
+    --line-mask-pad: 0.18em;
     display: block;
-    padding-bottom: 0.06em;
-    margin-bottom: -0.06em;
+    overflow: hidden;
+    padding-bottom: var(--line-mask-pad);
+    margin-bottom: calc(-1 * var(--line-mask-pad));
   }
 
   .line-inner {
     display: block;
-    transform: translateY(112%);
+    transform: translateY(calc(100% + var(--line-mask-pad) + 1px));
     animation: line-in 760ms var(--ease-out) both;
   }
 
